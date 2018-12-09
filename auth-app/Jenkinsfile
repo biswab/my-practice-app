@@ -6,16 +6,5 @@ pipeline {
                 echo "build phase"
             }
         }
-        stage('Test'){
-            steps {
-                echo "Test phase"
-                junit 'reports/**/*.xml'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo "Deploy phase"
-            }
-        }
     }
 }
